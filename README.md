@@ -17,3 +17,7 @@ The intent of this endpoint isn't to scrape new data, it's to indicate to us tha
 - The business has changed ownership or names.
 
 It's worth noting that this should all be more easily doable using the Google Places Search API. 
+
+Running locally:
+- Use "donet run" to serve endpoints localhost:5001
+- Use "localhost:5001/swagger" to test available endpoints.
