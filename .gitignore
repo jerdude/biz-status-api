@@ -2,4 +2,4 @@ obj/Debug/netcoreapp3.1/biz-status-api.assets.cache
 obj/Debug/netcoreapp3.1/biz-status-api.assets.cache
 
 # Build results
-obj/Debug/
+obj/Debug/*
