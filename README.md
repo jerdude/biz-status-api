@@ -16,7 +16,7 @@ The intent of this endpoint isn't to scrape new data, it's to indicate to us tha
 - The business has moved.
 - The business has changed ownership or names.
 
-It's worth noting that this should all be more easily doable using the Google Places Search API. 
+It's worth noting that this should all be more easily doable using the Google Places Search API. We will be using this to ocassionally verify individual records in our small business directory. If used in bulk, this approach will almost certainly get you flagged as a bot by Google.
 
 Running locally:
 - Use "donet run" to serve endpoints localhost:5001
