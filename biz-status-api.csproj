@@ -5,5 +5,9 @@
     <RootNamespace>biz_status_api</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="0.14.0" />
+  </ItemGroup>
+
 
 </Project>
