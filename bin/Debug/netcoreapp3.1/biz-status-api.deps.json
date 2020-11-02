@@ -25,6 +25,7 @@
       "biz-status-api/1.0.0": {
         "dependencies": {
           "AngleSharp": "0.14.0",
+          "HtmlAgilityPack": "1.11.26",
           "Swashbuckle.AspNetCore.Swagger": "5.6.3",
           "Swashbuckle.AspNetCore.SwaggerGen": "5.6.3",
           "Swashbuckle.AspNetCore.SwaggerUI": "5.6.3",
@@ -330,6 +331,17 @@
         },
         "compile": {
           "lib/netstandard2.0/AngleSharp.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.26": {
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.11.26.0",
+            "fileVersion": "1.11.26.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/2.0.0": {},
@@ -2096,6 +2108,13 @@
       "sha512": "sha512-34w9I7nyszfEYBY8g7T3B0AtWlOivNh+QoWc3KECRwbmcNyqWmb4huihtmpH2Ds7rIRRHMMPv9yfPBxxjBn03g==",
       "path": "anglesharp/0.14.0",
       "hashPath": "anglesharp.0.14.0.nupkg.sha512"
+    },
+    "HtmlAgilityPack/1.11.26": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e0L7s+cj4MapB8hpL8sakwTSwX/cngBCcNfCT8/2v1IRXoly/hrt3FjkzGmgsjMHlO50whSGmRbDhEiUudd3tQ==",
+      "path": "htmlagilitypack/1.11.26",
+      "hashPath": "htmlagilitypack.1.11.26.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
       "type": "package",

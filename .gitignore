@@ -1,5 +1,7 @@
 obj/Debug/netcoreapp3.1/biz-status-api.assets.cache
-obj/Debug/netcoreapp3.1/biz-status-api.assets.cache
+obj/Debug/netcoreapp3.1/biz-status-api.dll
+obj/Debug/netcoreapp3.1/biz-status-api.pdb
+obj/Debug/netcoreapp3.1/HtmlAgilityPack.dll
 
 # Build results
 obj/Debug/*
