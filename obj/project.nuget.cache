@@ -1,18 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "F9OTEjAAcTHvl9yzthLNj6FxKW/eFH2dWA37ZxMF187ETKJvnNnKbnGRX3Wp1q1u6fnmgy9HxpoJijjmTAMB0g==",
+  "dgSpecHash": "N203kUmfeARMWBzsmBTdF+QHJ/fXJOXhIg2VaHy2zNeCUlAJj415rnck4xrYmexSskrY0eEkjxjXXwDsXXTYMw==",
   "success": true,
   "projectFilePath": "C:\\repos\\biz-status-api\\biz-status-api\\biz-status-api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jer15\\.nuget\\packages\\anglesharp\\0.14.0\\anglesharp.0.14.0.nupkg.sha512",
     "C:\\Users\\jer15\\.nuget\\packages\\htmlagilitypack\\1.11.26\\htmlagilitypack.1.11.26.nupkg.sha512",
-    "C:\\Users\\jer15\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\jer15\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\jer15\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\jer15\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\jer15\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
-    "C:\\Users\\jer15\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
-    "C:\\Users\\jer15\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512"
+    "C:\\Users\\jer15\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
   ],
   "logs": []
 }
