@@ -3,6 +3,11 @@ obj/Debug/netcoreapp3.1/biz-status-api.dll
 obj/Debug/netcoreapp3.1/biz-status-api.pdb
 obj/Debug/netcoreapp3.1/HtmlAgilityPack.dll
 
+bin/Debug/netcoreapp3.1/biz-status-api.assets.cache
+bin/Debug/netcoreapp3.1/biz-status-api.dll
+bin/Debug/netcoreapp3.1/biz-status-api.pdb
+bin/Debug/netcoreapp3.1/HtmlAgilityPack.dll
+
 # Build results
 obj/Debug/*
 obj/Debug/netcoreapp3.1/*
