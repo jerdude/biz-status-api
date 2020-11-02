@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Gm8oOXdwfy0fWB7i+emWtLC70Py2v8G7P9dkVzNVA99Tp7mHjPCXGWdOT4HcxBsLRvZN0o4EtItEG1wxnJE7UQ==",
+  "dgSpecHash": "F9OTEjAAcTHvl9yzthLNj6FxKW/eFH2dWA37ZxMF187ETKJvnNnKbnGRX3Wp1q1u6fnmgy9HxpoJijjmTAMB0g==",
   "success": true,
   "projectFilePath": "C:\\repos\\biz-status-api\\biz-status-api\\biz-status-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jer15\\.nuget\\packages\\anglesharp\\0.14.0\\anglesharp.0.14.0.nupkg.sha512",
+    "C:\\Users\\jer15\\.nuget\\packages\\htmlagilitypack\\1.11.26\\htmlagilitypack.1.11.26.nupkg.sha512",
     "C:\\Users\\jer15\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\jer15\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\jer15\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
