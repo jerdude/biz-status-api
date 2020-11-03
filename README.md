@@ -1,8 +1,8 @@
 # biz-status-api
 
-A simple api endpoint used to verify the status of a business.
+A simple api endpoint used to verify the status of a business. Specifically, we'll be using this for an online small business directory to periodically verify that a business record is still valid. 
 
-- The endpoint will accept a search term (typically "Business Name + Address")
+- The endpoint will accept a search term (typically "Business Name + Address" or "Business Name + City")
 - We will then send a search request to Google
 - We'll parse the dom results looking for a few things:
   - Did it return a google places result on the right? If not, flag this business as possibly invalid.
