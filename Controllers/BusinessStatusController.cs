@@ -34,7 +34,7 @@ namespace biz_status_api.Controllers
                 return NotFound("Address may have changed.");
 
             if(!htmlSearch.FuzzyContains(expectedName + "\\"))
-            return NotFound("Name may have changed.");
+                return NotFound("Name may have changed.");
 
             return Ok("Business seems valid.");
         }
