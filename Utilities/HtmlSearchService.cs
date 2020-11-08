@@ -4,12 +4,24 @@ using HtmlAgilityPack;
 
 namespace biz_status_api.Utilities
 {
-    public class HtmlSearchService
+    public interface IHtmlSearchService
+    {
+        bool FuzzyContains(string searchText);
+        bool ExactContains(string searchText);
+        void Initialize(string rawHtml);
+    }
+
+    public class HtmlSearchService : IHtmlSearchService
     {
         private string _scrubbedHtml;
         private string _rawHtml;
 
-        public HtmlSearchService(string rawHtml)
+        public HtmlSearchService()
+        {
+
+        }
+
+        public void Initialize(string rawHtml)
         {
             _rawHtml = rawHtml;
             _scrubbedHtml = ScrubString(rawHtml);

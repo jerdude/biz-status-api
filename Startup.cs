@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using biz_status_api.Utilities;
 
 namespace biz_status_api
 {
@@ -27,6 +21,7 @@ namespace biz_status_api
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddSingleton<IHtmlSearchService, HtmlSearchService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

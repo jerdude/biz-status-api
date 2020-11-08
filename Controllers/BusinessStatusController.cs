@@ -10,10 +10,10 @@ namespace biz_status_api.Controllers
     public class BusinessStatusController : ControllerBase
     {
 
-
-        public BusinessStatusController()
+        private readonly IHtmlSearchService _searchService;
+        public BusinessStatusController(IHtmlSearchService searchService)
         {
-
+            _searchService = searchService;
         }
 
         [HttpGet]
@@ -26,16 +26,15 @@ namespace biz_status_api.Controllers
             var web = new HtmlWeb();
             var doc = web.Load(url).DocumentNode;
 
-            //TODO: Inject me
-            var htmlSearch = new HtmlSearchService(doc.InnerHtml);
+            _searchService.Initialize(doc.InnerHtml);
 
-            if(htmlSearch.ExactContains("CLOSED"))
+            if(_searchService.ExactContains("CLOSED"))
                 return NotFound("Business may be closed.");
 
-            if(!htmlSearch.FuzzyContains(expectedAddress + "\\"))
+            if(!_searchService.FuzzyContains(expectedAddress + "\\"))
                 return NotFound("Address may have changed.");
 
-            if(!htmlSearch.FuzzyContains(expectedName + "\\"))
+            if(!_searchService.FuzzyContains(expectedName + "\\"))
                 return NotFound("Name may have changed.");
 
             return Ok("Business seems valid.");
