@@ -18,12 +18,14 @@ namespace biz_status_api.Utilities
         //Allows for extra spaces, periods, different casing, etc.
        public bool FuzzyContains(string searchText)
        {
+           //TODO: Add test
            return _scrubbedHtml.Contains(ScrubString(searchText));
        }
 
        
        public bool ExactContains(string searchText)
        {
+           //TODO: Add test
            return _rawHtml.Contains(searchText);
        }
 

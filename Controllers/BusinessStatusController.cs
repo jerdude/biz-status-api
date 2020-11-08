@@ -21,10 +21,12 @@ namespace biz_status_api.Controllers
         {
             var encodedSearchText = System.Web.HttpUtility.UrlEncode(searchText);
 
+            //TODO: Move this into an independent service
             var url = "http://maps.google.com/?q=" + encodedSearchText;
             var web = new HtmlWeb();
             var doc = web.Load(url).DocumentNode;
 
+            //TODO: Inject me
             var htmlSearch = new HtmlSearchService(doc.InnerHtml);
 
             if(htmlSearch.ExactContains("CLOSED"))
