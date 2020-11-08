@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using HtmlAgilityPack;
+using biz_status_api.Utilities;
 
 
 namespace biz_status_api.Controllers
@@ -24,13 +25,15 @@ namespace biz_status_api.Controllers
             var web = new HtmlWeb();
             var doc = web.Load(url).DocumentNode;
 
-            if(doc.InnerHtml.Contains("CLOSED"))
+            var htmlSearch = new HtmlSearchService(doc.InnerHtml);
+
+            if(htmlSearch.ExactContains("CLOSED"))
                 return NotFound("Business may be closed.");
 
-            if(!doc.InnerHtml.Contains(expectedAddress + "\\"))
+            if(!htmlSearch.FuzzyContains(expectedAddress + "\\"))
                 return NotFound("Address may have changed.");
 
-            if(!doc.InnerHtml.Contains(expectedName + "\\"))
+            if(!htmlSearch.FuzzyContains(expectedName + "\\"))
             return NotFound("Name may have changed.");
 
             return Ok("Business seems valid.");
