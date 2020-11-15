@@ -44,6 +44,8 @@ namespace biz_status_api.Utilities
         //Scrubs text to make it more easily comparable
         private string ScrubString(string toScrub)
         {
+            //TODO: Replace St with Street, Ct with Court, Pl with Place, Blvd with BOulevard, etc.
+
             toScrub = toScrub.Replace(".", "");
             toScrub = toScrub.Replace(" ", "");
             toScrub = toScrub.ToUpper();
